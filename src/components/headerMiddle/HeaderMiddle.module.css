@@ -1,0 +1,29 @@
+.headerMiddle {
+
+}
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.headerMiddle__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.headerMiddle__item {
+
+}
+
+.headerMiddle__links {
+    text-decoration: none;
+    color: #000000b3;
+    font-size: 14px;
+    padding-bottom: 6px;
+}

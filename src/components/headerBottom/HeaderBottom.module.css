@@ -1,0 +1,102 @@
+.headerBottom {
+    padding-top: 17px;
+    padding-bottom: 11px;
+}
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.headerBottom__container {
+    display: flex;
+    align-items: center;
+}
+
+.uzum__header__logo {
+    width: 215px;
+    height: 32px;
+    margin-right: 32px;
+}
+
+.headerBottom__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    border: none;
+    font-size: .875rem;
+    font-family: Inter;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 4px;
+    justify-items: right;
+    border-radius: 4px;
+    background-color: rgba(49,49,196,0.1);
+    color: #33c;
+    height: 40px;
+    width: 120px;
+    margin-right: 7px;
+    font-family: Inter,sans-serif;
+    transition: 0.3s ease;
+    margin-right: 7px;
+}
+
+.headerBottom__btn:hover {
+    opacity: 0.9;
+}
+
+.headerBottom__input__wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.headerBottom__input {
+    height: 40px;
+    flex-grow: 1;
+    border: 1px solid rgba(118,121,127,0.3);
+    border-right: none;
+    padding: 0 calc(15% + 38px) 0 16px;
+    border-radius: 4px 0 0 4px;
+}
+
+.headerBottom__input__btn {
+    max-width: 78px;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(118,121,127,0.3);
+    border-left: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-start-end-radius: 4px;
+    border-end-end-radius: 4px;
+    margin-right: 26px;
+}
+
+.compare__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    font-size: 14px;
+    text-decoration: none;
+    color: #000000;
+    padding: 0px 8px;
+    margin-right: 8px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.headerBottom__compare__text {
+    font-size: 14px;
+    color: #000000;
+}

@@ -1,0 +1,24 @@
+.catalog {
+    width: 1080px;
+    overflow-y: auto;
+    background-color: var(--primary-white-color);
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 10;
+    transition: 0.10s ease;
+    padding: 32px;
+    border-radius: 10px;
+    top: 20%;
+}
+
+.catalogactive {
+    left: 13%;
+    transition: 0.10s ease;
+}
+
+.catalog__icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}

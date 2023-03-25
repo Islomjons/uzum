@@ -1,0 +1,38 @@
+.seeAll {
+    padding: 48px 0px 32px;
+}
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.seeAll__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.seeAll__btn {
+    max-width: 740px;
+    width: 100%;
+    height: 56px;
+    padding: 7px 14px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #141415;
+    background-color: #76797f1a;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-bottom: 32px;
+}
+
+.seeAll__btn:hover {
+    opacity: 0.8;
+}
