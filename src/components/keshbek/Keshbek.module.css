@@ -1,0 +1,19 @@
+.keshbek {
+    padding: 16px 0px 16px 0px;
+}
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.keshbek__img {
+    width: 1240px;
+    height: 413px;
+    object-fit: cover;
+    border-radius: 8px;
+}
