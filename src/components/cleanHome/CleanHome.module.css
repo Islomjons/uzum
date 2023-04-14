@@ -1,4 +1,4 @@
-.sportsWear {
+.cleanHome {
     padding-bottom: 16px;
 }
 
@@ -11,94 +11,123 @@
     padding-right: 20px;
 }
 
-.sportsWear__container {
+.cleanHome__info__wrapper {
+    position: relative;
+}
+
+.cleanHome__container {
     display: flex;
     align-items: center;
     margin: 21px 0px;
 }
 
-.sportsWear__heading {
+.cleanHome__link {
+    text-decoration: none;
     font-size: 28px;
     color: #000000;
+    font-weight: bold;
 }
 
-.sportsWear__btn {
-    background: none;
-    border: none;
+.cleanHome__next__btn {
     display: flex;
     align-items: center;
     justify-content: center;
-    outline: none;
+    border: none;
+    background: none;
     cursor: pointer;
+    outline: none;
     width: 36px;
     height: 36px;
 }
 
-.sportsWear__next__icon {
+.cleanHome__next__icon {
     width: 24px;
     height: 24px;
 }
 
-.sportsWear__list {
+.cleanHome__list {
     display: flex;
     align-items: center;
     gap: 20px;
+    overflow: hidden;
 }
 
-.sportsWear__item {
-    max-width: 232px;
-    width: 100%;
+.cleanHome__item {
+    width: 232px;
     border-radius: 8px;
     transition: 0.3s ease;
 }
 
-.sportsWear__item:hover {
+.cleanHome__item:hover {
     box-shadow: 20px 20px 50px #0000001a;
 }
 
-
-.sportsWear__img {
+.cleanHome__img {
     width: 232px;
     height: 309px;
     object-fit: cover;
-    border-radius: 8px;
+    border-radius: 7px;
 }
 
-.sportsWear__wrapper {
+.cleanHome__wrapper {
     padding: 12px 8px 8px;
 }
 
-.sportsWear__title {
+.cleanHome__title {
     color: #000000;
     font-size: 12.8px;
     font-weight: 400;
 }
 
-.sportsWear__price {
+.cleanHome__price {
     color: #000000;
     font-size: 14px;
     font-weight: 500;
     margin-top: 30px;
 }
 
-.sportsWear__btn__wrapper {
+.cleanHome__btn__wrapper {
     display: flex;
     align-items: center;
     justify-content: flex-end;
     padding: 12px 8px 8px;
 }
 
-.sportsWear__cart__btn {
-    background-color: #ffffff;
-    border-radius: 50%;
+.cleanHome__btn {
     display: flex;
     align-items: center;
-    cursor: pointer;
+    justify-content: center;
+    border-radius: 50%;
     border: 1px solid #76797f4d;
+    background-color: #fff;
     padding: 5px;
+    cursor: pointer;
 }
 
-.sportsWear__cart__icon {
+.cleanHome__icon {
     width: 24px;
     height: 24px;
+}
+
+.cleanHome__swiper__btn {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-40%);
+    border: none;
+    background-color: #fff;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0.5;
+    border-radius: 50%;
+}
+
+.cleanHome__swiper__btn[data-btn-type="left"]{
+    left: 0;
+}
+
+.cleanHome__swiper__btn[data-btn-type="right"]{
+    right: 0;
 }

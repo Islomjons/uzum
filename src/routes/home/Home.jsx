@@ -1,4 +1,6 @@
 import React from 'react'
+import Active from '../../components/active/Active'
+import CleanHome from '../../components/cleanHome/CleanHome'
 import Darhol from '../../components/darhol/Darhol'
 import HeaderMiddle from '../../components/headerMiddle/HeaderMiddle'
 import Hero from '../../components/hero/Hero'
@@ -9,8 +11,11 @@ import ProductCards from '../../components/productCards/ProductCards'
 import ProductMain from '../../components/productMain/ProductMain'
 import Products from '../../components/products/Products'
 import Rent from '../../components/rent/Rent'
+import SeasonSpring from '../../components/seasonSpring/SeasonSpring'
 import SeeAll from '../../components/seeAll/SeeAll'
+import SportsWear from '../../components/sportsWear/SportsWear'
 import Uzauto from '../../components/uzauto/Uzauto'
+import Wears from '../../components/wears/Wears'
 
 const Home = () => {
   return (
@@ -27,6 +32,11 @@ const Home = () => {
         <Rent />
         <Keshbek />
         <Uzauto />
+        <SportsWear />
+        <Wears />
+        <Active />
+        <CleanHome />
+        <SeasonSpring />
     </div>
   )
 }

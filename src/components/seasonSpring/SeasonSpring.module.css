@@ -1,0 +1,38 @@
+.seasonSpring {
+
+}
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.seasonSpring__container {
+    display: flex;
+    align-items: center;
+}
+
+.seasonSpring__heading {
+    text-decoration: none;
+}
+
+.seasonSpring__next__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.seasonSpring__next__icon {
+    width: 24px;
+    height: 24px;
+}

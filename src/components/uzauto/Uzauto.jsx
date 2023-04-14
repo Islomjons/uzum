@@ -6,7 +6,6 @@ import { FiShoppingCart } from "react-icons/fi"
 
 const Uzauto = () => {
     const [uzautoJson, setUzautoJson] = useState([])
-
     useEffect(() => {
         fetch("https://api.escuelajs.co/api/v1/products")
             .then(response => response.json())
@@ -26,7 +25,7 @@ const Uzauto = () => {
             <ul className={c.uzauto__list}>
                 {   
                     uzautoJson.map((uzAuto, id) => 
-                        <li className={c.uzauto__item}>
+                        <li className={c.uzauto__item} key={id}>
                             <Link style={{textDecoration: "none"}} to={`/pdp/${uzAuto.id}`}>
                                 <img className={c.uzAuto__img} src={uzAuto.category.image} alt="" />
                                 <div className={c.uzAuto__wrapper}>

@@ -59,6 +59,7 @@
     width: 232px;
     height: 309px;
     object-fit: cover;
+    border-radius: 8px;
 }
 
 .uzAuto__wrapper {
