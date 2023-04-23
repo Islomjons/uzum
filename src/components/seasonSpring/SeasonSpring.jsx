@@ -1,10 +1,33 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import c from "./SeasonSpring.module.css"
-import { GrFormNext } from "react-icons/gr"
+import { GrFormPrevious, GrFormNext } from "react-icons/gr"
 
 const SeasonSpring = () => {
+    const elSeason = useRef()
     const [seasonSpringJson, setSeasonSpringJson] = useState([])
+    const [seasonSpringSwiper, setSeasonSpringSwiper] = useState(0)
+
+    const swiperRight = () => {
+        if (seasonSpringSwiper < seasonSpringJson.length - 1) {
+            setSeasonSpringSwiper(seasonSpringSwiper => seasonSpringSwiper + 1)
+        }
+        else{
+            setSeasonSpringSwiper(0)
+        }
+    }
+
+    const swiperLeft = () => {
+        if (seasonSpringSwiper > 0) {
+            setSeasonSpringSwiper(seasonSpringSwiper => seasonSpringSwiper - 1)
+        }else{
+            setSeasonSpringSwiper(seasonSpringJson.length - 1)
+        }
+    }
+
+    useEffect(() => {
+        elSeason.current.scrollLeft = seasonSpringSwiper * elSeason.current.offsetWidth
+    }, [seasonSpringSwiper])
     useEffect(() => {
         fetch("https://api.escuelajs.co/api/v1/products")
             .then(response => response.json())
@@ -20,17 +43,27 @@ const SeasonSpring = () => {
                         <GrFormNext className={c.seasonSpring__next__icon}/>
                     </button>
                 </div>
-                <ul className={c.seasonSpring__list}>
+                <button className={c.seasonSpring__swiper__btn} onClick={swiperLeft} data-btn-type="left">
+                    <GrFormPrevious className={c.seasonSpring__swiper__icon}/>
+                </button>
+                <ul className={c.seasonSpring__list} ref={elSeason}>
                     {
                         seasonSpringJson.map((seasonSprings, id) => 
-                            <li className={c.seasonSpring__list}>
+                            <li className={c.seasonSpring__item} key={id}>
                                 <Link style={{textDecoration: "none"}} to={`/pdp/${seasonSprings.id}`}>
                                     <img className={c.seasonSpring__img} src={seasonSprings.category.image} alt="" />
+                                    <div className={c.seasonSpring__wrapper}>
+                                        <p className={c.seasonSpring__title}>{seasonSprings.title}</p>
+                                        <p className={c.seasonSpring__price}>{seasonSprings.price}</p>
+                                    </div>
                                 </Link>
                             </li>
                         )
                     }
                 </ul>
+                <button className={c.seasonSpring__swiper__btn} onClick={swiperRight} data-btn-type="right">
+                    <GrFormNext className={c.seasonSpring__swiper__icon}/>
+                </button>
             </div>
         </div>
     </div>

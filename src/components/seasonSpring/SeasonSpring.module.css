@@ -1,5 +1,5 @@
 .seasonSpring {
-
+    padding-bottom: 16px;
 }
 
 .container {
@@ -11,13 +11,21 @@
     padding-right: 20px;
 }
 
+.seasonSpring__wrapper__info {
+    position: relative;
+}
+
 .seasonSpring__container {
     display: flex;
     align-items: center;
+    margin: 21px 0px;
 }
 
 .seasonSpring__heading {
     text-decoration: none;
+    font-size: 28px;
+    color: #000000;
+    font-weight: bold;
 }
 
 .seasonSpring__next__btn {
@@ -35,4 +43,70 @@
 .seasonSpring__next__icon {
     width: 24px;
     height: 24px;
+}
+
+.seasonSpring__list {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    overflow: hidden;
+}
+
+.seasonSpring__item {
+    max-width: 232px;
+    width: 100%;
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+
+.seasonSpring__item:hover {
+    box-shadow: 20px 20px 50px #0000001a;
+}
+
+.seasonSpring__img {
+    width: 232px;
+    height: 309px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.seasonSpring__wrapper {
+    padding: 12px 8px 8px;
+}
+
+.seasonSpring__title {
+    color: #000000;
+    font-size: 12.8px;
+    font-weight: 400;
+}
+
+.seasonSpring__price {
+    color: #000000;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 30px;
+}
+
+.seasonSpring__swiper__btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0.5;
+    font-size: 40px;
+    border: none;
+    border-radius: 50%;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.seasonSpring__swiper__btn[data-btn-type="left"] {
+    left: 0;
+}
+
+.seasonSpring__swiper__btn[data-btn-type="right"] {
+    right: 0;
 }

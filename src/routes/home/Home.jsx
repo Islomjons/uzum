@@ -14,6 +14,7 @@ import Rent from '../../components/rent/Rent'
 import SeasonSpring from '../../components/seasonSpring/SeasonSpring'
 import SeeAll from '../../components/seeAll/SeeAll'
 import SportsWear from '../../components/sportsWear/SportsWear'
+import Techno from '../../components/techno/Techno'
 import Uzauto from '../../components/uzauto/Uzauto'
 import Wears from '../../components/wears/Wears'
 
@@ -37,6 +38,7 @@ const Home = () => {
         <Active />
         <CleanHome />
         <SeasonSpring />
+        <Techno />
     </div>
   )
 }
