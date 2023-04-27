@@ -11,8 +11,13 @@
     padding-right: 20px;
 }
 
+.pdp__list__wrapper {
+    display: flex;
+    gap: 20px;
+}
+
 .pdp__list {
-    max-width: 600px;
+    max-width: 630px;
     width: 100%;
 }
 
@@ -60,4 +65,11 @@
     object-fit: contain;
     border-radius: 8px;
     cursor: pointer;
+}
+
+/* Right Side */
+
+.pdp__right {
+    max-width: 630px;
+    width: 100%;
 }
