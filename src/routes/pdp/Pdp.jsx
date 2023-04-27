@@ -50,7 +50,7 @@ const Pdp = () => {
                     }
                 </div>
                 <div className={c.pdp__right}>
-                    
+                        
                 </div>
             </div>
         </div>
