@@ -1,0 +1,10 @@
+.techno {
+    padding-top: 16px;
+}
+
+.techno__img {
+    width: 1240px;
+    height: 413px;
+    object-fit: contain;
+    border-radius: 8px;
+}

@@ -13,7 +13,7 @@ function App() {
   const [isCatalogActive, setIsCatalogActive] = useState(false)
   const [isCatalogEnter, setIsCatalogEnter] = useState(false)
   return (
-    <div>
+    <div className='container'>
         <Header />
         <HeaderBottom setIsSignUpActive={setIsSignUpActive} setIsSignUpEnter={setIsSignUpEnter} setIsCatalogActive={setIsCatalogActive} setIsCatalogEnter={setIsCatalogEnter}/>
         <SignUp isSignUpActive={isSignUpActive} setIsSignUpActive={setIsSignUpActive} isSignUpEnter={isSignUpEnter} setIsSignUpEnter={setIsSignUpEnter}/>
