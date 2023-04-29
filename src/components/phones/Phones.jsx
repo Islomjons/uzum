@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import c from "./Phones.module.css"
 import { FiShoppingCart } from "react-icons/fi"
@@ -8,8 +8,28 @@ const Phones = () => {
     const underLineNone = {
         textDecoration: "none"
     }
+  const elPhone = useRef() 
   const [phonesJson, setPhonesJson] = useState([])
   const [phoneSwiper, setPhoneSwiper] = useState(0)
+
+  const swiperLeft = () => {
+      if (phoneSwiper < 0) {
+          setPhoneSwiper(phonesJson.length - 1)
+      }else{
+          setPhoneSwiper(0)
+      }
+  }
+
+  const swiperRight = () => {
+      if (phoneSwiper < phonesJson.length - 1) {
+          setPhoneSwiper(phoneSwiper + 1)
+      }
+  }
+
+  useEffect(() => {
+      elPhone.current.scrollLeft = phoneSwiper * elPhone.current.offsetWidth
+  }, [phoneSwiper])
+
   useEffect(() => {
       fetch("https://api.escuelajs.co/api/v1/products")
           .then(response => response.json())
@@ -23,10 +43,10 @@ const Phones = () => {
                 <GrFormNext className={c.phones__next__icon}/>
             </button>
         </div>
-            <button className={c.phones__swiper__btn} data-btn-type="left">
+            <button className={c.phones__swiper__btn} data-btn-type="left" onClick={swiperLeft}>
                 <GrFormPrevious className={c.phones__swiper__icon}/>
             </button>
-            <ul className={c.phones__list}>
+            <ul className={c.phones__list} ref={elPhone}>
                 {
                     phonesJson.map((phoness, id) => 
                         <li className={c.phones__item} key={id}>
@@ -46,7 +66,7 @@ const Phones = () => {
                     )
                 }
             </ul>
-            <button className={c.phones__swiper__btn} data-btn-type="right">
+            <button className={c.phones__swiper__btn} data-btn-type="right" onClick={swiperRight}>
                 <GrFormNext className={c.phones__swiper__icon}/>
             </button>
     </div>
