@@ -6,6 +6,7 @@ import HeaderMiddle from '../../components/headerMiddle/HeaderMiddle'
 import Hero from '../../components/hero/Hero'
 import HomeProductCards from '../../components/homeProductCards/HomeProductCards'
 import Keshbek from '../../components/keshbek/Keshbek'
+import MensWear from '../../components/mensWear/MensWear'
 import Phones from '../../components/phones/Phones'
 import ProductBottom from '../../components/productBottom/ProductBottom'
 import ProductCards from '../../components/productCards/ProductCards'
@@ -41,6 +42,7 @@ const Home = () => {
         <SeasonSpring />
         <Techno />
         <Phones />
+        <MensWear />
     </div>
   )
 }
