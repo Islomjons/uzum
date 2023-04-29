@@ -70,13 +70,10 @@ const Phones = () => {
                 <GrFormNext className={c.phones__swiper__icon}/>
             </button>
 
-            <footer>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </footer>
+            <div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, aspernatur!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, culpa!</p>
+            </div>
     </div>
   )
 }
