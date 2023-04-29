@@ -1,0 +1,121 @@
+.phones {
+    padding-top: 16px;
+    position: relative;
+}
+
+.phones__next__wrapper {
+    display: flex;
+    align-items: center;
+    margin: 21px 0px;
+}
+
+.phones__heading {
+    text-decoration: none;
+    font-size: 28px;
+    color: #000000;
+    font-weight: bold;
+}
+
+.phones__next__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: none;
+    cursor: pointer;
+    outline: none;
+    width: 36px;
+    height: 36px;
+}
+
+.phones__next__icon {
+    width: 24px;
+    height: 24px;
+}
+
+.phones__list {
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+}
+
+.phones__item {
+    max-width: 232px;
+    width: 100%;
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+
+.phones__item:hover {
+    box-shadow: 20px 20px 50px #0000001a;
+}
+
+.phones__img {
+    width: 232px;
+    height: 309px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.phones__wrapper {
+    padding: 12px 8px 8px;
+}
+
+.phones__title {
+    color: #000000;
+    font-size: 12.8px;
+    font-weight: 400;
+}
+
+.phones__price {
+    color: #000000;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 30px;
+}
+
+.phones__cart__btn__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 12px 8px 8px;
+}
+
+.phones__cart__btn {
+    display: flex;
+    align-items: center;
+    border: 1px solid #76797f4d;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    color: #141415;
+    background-color: #fff;
+}
+
+.phones__cart__icon {
+    width: 24px;
+    height: 24px;
+}
+
+.phones__swiper__btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background-color: #fff;
+    opacity: 0.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.phones__swiper__btn[data-btn-type="left"] {
+    left: 0;
+}
+
+.phones__swiper__btn[data-btn-type="right"] {
+    right: 0;
+}

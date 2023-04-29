@@ -87,6 +87,29 @@
     margin-top: 30px;
 }
 
+.springSeason__cart__btn__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 12px 8px 8px;
+}
+
+.springSeason__cart__btn {
+    display: flex;
+    align-items: center;
+    border: 1px solid #76797f4d;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    color: #141415;
+    background-color: #fff;
+}
+
+.springSeason__cart__icon {
+    width: 24px;
+    height: 24px;
+}
+
 .seasonSpring__swiper__btn {
     position: absolute;
     top: 50%;

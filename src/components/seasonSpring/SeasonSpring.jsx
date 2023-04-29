@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import c from "./SeasonSpring.module.css"
 import { GrFormPrevious, GrFormNext } from "react-icons/gr"
+import { FiShoppingCart } from "react-icons/fi"
 
 const SeasonSpring = () => {
     const elSeason = useRef()
@@ -57,6 +58,11 @@ const SeasonSpring = () => {
                                         <p className={c.seasonSpring__price}>{seasonSprings.price}</p>
                                     </div>
                                 </Link>
+                            <div className={c.springSeason__cart__btn__wrapper}>
+                                <button className={c.springSeason__cart__btn}>
+                                    <FiShoppingCart className={c.springSeason__cart__icon}/>
+                                </button>
+                            </div>
                             </li>
                         )
                     }
