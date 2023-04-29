@@ -69,6 +69,14 @@ const Phones = () => {
             <button className={c.phones__swiper__btn} data-btn-type="right" onClick={swiperRight}>
                 <GrFormNext className={c.phones__swiper__icon}/>
             </button>
+
+            <footer>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </footer>
     </div>
   )
 }
