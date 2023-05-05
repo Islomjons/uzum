@@ -13,6 +13,10 @@ const MensWear = () => {
         <ul className={c.mensWear__list}>
             
         </ul>
+        <div>
+          <p>salom</p>
+          <h1>Islomjon</h1>
+        </div>
     </div>  
   )
 }
