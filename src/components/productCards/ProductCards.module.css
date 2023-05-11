@@ -94,3 +94,103 @@
     width: 24px;
     height: 24px;
 }
+
+@media only screen and (max-width: 1310px) {
+    .productCards {
+        padding-bottom: 20px;
+    }
+    
+    .container {
+        max-width: 1280px;
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .productCards__container {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        text-decoration: none;
+        margin-bottom: 20px;
+    }
+    
+    .productCards__header {
+        font-size: 28px;
+        line-height: 36px;
+        font-weight: 700;
+        color: #000000;
+    }
+    
+    .productCards__icon {
+        width: 36px;
+        height: 36px;
+        cursor: pointer;
+    }
+    
+    .productCards__list {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    
+    .productCards__item {
+        max-width: 232px;
+        width: 100%;
+        border-radius: 7px;
+        transition: 0.3s ease;
+    }
+    
+    .productCards__item:hover {
+        box-shadow: 20px 20px 50px #0000001a;
+    }
+    
+    .productCards__img {
+        width: 232px;
+        height: 309px;
+        object-fit: cover;
+        border-radius: 7px;
+    }
+    
+    .productCards__info {
+        padding: 12px 8px 8px;
+    }
+    
+    .productCards__title {
+        color: #000000;
+        font-size: 12.8px;
+        font-weight: 400;
+    }
+    
+    .productCards__price {
+        color: #000000;
+        font-size: 14px;
+        font-weight: 500;
+        margin-top: 30px;
+    }
+    
+    .productCards__btn__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 12px 8px 8px;
+    }
+    
+    .productCards__btn {
+        background-color: #fff;
+        border: 1px solid rgba(118,121,127,0.3);
+        color: #141415;
+        border-radius: 16px;
+        padding: 5px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .productCards__icon {
+        width: 24px;
+        height: 24px;
+    }
+}
