@@ -48,10 +48,6 @@ const MensWear = () => {
         <button className={c.mensWear__carausel__btn}>
             <GrFormNext className={c.mensWear__carausel__icon}/>
         </button>
-        <div>
-            <h1>Islomjon Mukhammadaliev</h1>
-            <h1>Marufjon ogli</h1>
-        </div>
     </div>  
   )
 }
