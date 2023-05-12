@@ -9,11 +9,13 @@ const MensWear = () => {
       textDecoration: "none"
   }
   const [mensWearJson, setMensWearJson] = useState([])
+  const [mensWearSwiper, setMensWearSwiper] = useState(0)
+
   useEffect(() => {
-      fetch("https://api.escuelajs.co/api/v1/products")
-          .then(response => response.json())
-          .then(data => setMensWearJson(data.slice(85, 95)))
-  }, [])
+    fetch("https://api.escuelajs.co/api/v1/products")
+       .then(response => response.json())
+       .then(data => setMensWearJson(data.slice(0, 10)))
+}, [])
   return (
     <div className={c.mensWear}>
         <div className={c.mensWear__wrapper}>
@@ -22,7 +24,7 @@ const MensWear = () => {
                 <GrFormNext className={c.mensWear__next__icon}/>
             </button>
         </div>
-        <button className={c.mensWear__carausel__btn}>
+        <button className={c.mensWear__carausel__btn} data-btn-type="left">
             <GrFormPrevious className={c.mensWear__carausel__icon}/>
         </button>
         <ul className={c.mensWear__list}>
@@ -45,7 +47,7 @@ const MensWear = () => {
                 )
             }
         </ul>
-        <button className={c.mensWear__carausel__btn}>
+        <button className={c.mensWear__carausel__btn} data-btn-type="right">
             <GrFormNext className={c.mensWear__carausel__icon}/>
         </button>
     </div>  

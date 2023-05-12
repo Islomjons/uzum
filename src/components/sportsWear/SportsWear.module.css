@@ -102,3 +102,111 @@
     width: 24px;
     height: 24px;
 }
+
+@media only screen and (max-width: 1310px) {
+    .sportsWear {
+        padding-bottom: 16px;
+    }
+    
+    .container {
+        max-width: 1280px;
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .sportsWear__container {
+        display: flex;
+        align-items: center;
+        margin: 21px 0px;
+    }
+    
+    .sportsWear__heading {
+        font-size: 28px;
+        color: #000000;
+    }
+    
+    .sportsWear__btn {
+        background: none;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        outline: none;
+        cursor: pointer;
+        width: 36px;
+        height: 36px;
+    }
+    
+    .sportsWear__next__icon {
+        width: 24px;
+        height: 24px;
+    }
+    
+    .sportsWear__list {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    
+    .sportsWear__item {
+        max-width: 232px;
+        width: 100%;
+        border-radius: 8px;
+        transition: 0.3s ease;
+    }
+    
+    .sportsWear__item:hover {
+        box-shadow: 20px 20px 50px #0000001a;
+    }
+    
+    
+    .sportsWear__img {
+        width: 232px;
+        height: 309px;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+    
+    .sportsWear__wrapper {
+        padding: 12px 8px 8px;
+    }
+    
+    .sportsWear__title {
+        color: #000000;
+        font-size: 12.8px;
+        font-weight: 400;
+    }
+    
+    .sportsWear__price {
+        color: #000000;
+        font-size: 14px;
+        font-weight: 500;
+        margin-top: 30px;
+    }
+    
+    .sportsWear__btn__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 12px 8px 8px;
+    }
+    
+    .sportsWear__cart__btn {
+        background-color: #ffffff;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        border: 1px solid #76797f4d;
+        padding: 5px;
+    }
+    
+    .sportsWear__cart__icon {
+        width: 24px;
+        height: 24px;
+    }
+}
