@@ -4,8 +4,10 @@ import { GrFormNext } from "react-icons/gr"
 import { Link } from 'react-router-dom'
 import { FiShoppingCart } from "react-icons/fi"
 import { useDispatch, useSelector } from 'react-redux'
+import { useTranslation } from 'react-i18next'
 
 const ProductCards = () => {
+    const { t } = useTranslation()
     const dispatch = useDispatch()
     const selector = useSelector(state => state)
     const dispatchProducts = (data) => {
@@ -26,7 +28,7 @@ const ProductCards = () => {
     <div className={c.productCards}>
         <div className={c.container}>
             <Link className={c.productCards__container}>
-                <h3 className={c.productCards__header}>Hafta aksiyasi</h3>
+                <h3 className={c.productCards__header}>{t("promotion")}</h3>
                 <GrFormNext className={c.productCards__icon}/>
             </Link>
             <ul className={c.productCards__list}>

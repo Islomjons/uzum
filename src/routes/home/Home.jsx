@@ -19,6 +19,7 @@ import SportsWear from '../../components/sportsWear/SportsWear'
 import Techno from '../../components/techno/Techno'
 import Uzauto from '../../components/uzauto/Uzauto'
 import Wears from '../../components/wears/Wears'
+import WomensWear from '../../components/womensWear/WomensWear'
 
 const Home = () => {
   return (
@@ -43,6 +44,7 @@ const Home = () => {
         <Techno />
         <Phones />
         <MensWear />
+        <WomensWear />
     </div>
   )
 }
