@@ -1,0 +1,100 @@
+.womensWear {
+    
+}
+
+.womensWear__wrapper {
+    margin: 21px 0px;
+    display: flex;
+    align-items: center;
+}
+
+.womensWear__link {
+    font-size: 28px;
+    color: #000000;
+    font-weight: bold;
+}
+
+.womensWear__next__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: none;
+    outline: none;
+    width: 36px;
+    height: 36px;
+}
+
+.womensWear__next__icon {
+    width: 24px;
+    height: 24px;
+}
+
+.womensWear__list {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    overflow: scroll;
+}
+
+.womensWear__item {
+    max-width: 232px;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.womensWear__img {
+    width: 232px;
+    height: 309px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.womensWear__info {
+    padding: 12px 8px 8px;
+}
+
+.womensWear__title {
+    color: #000000;
+    font-size: 12.8px;
+    font-weight: 400;
+}
+
+.womensWear__price {
+    color: #000000;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 30px;
+}
+
+.womensWear__cart__btn__wrapper {
+    padding: 12px 8px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.womensWear__cart__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #76797f4d;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    color: #141415;
+    background-color: #fff;
+}
+
+.womensWear__cart__icon {
+    width: 24px;
+    height: 24px;
+}
+
+.womensWear__swiper__btn {
+
+}
+
+.womensWear__swiper__icon {
+    
+}

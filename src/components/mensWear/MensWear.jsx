@@ -35,7 +35,7 @@ const MensWear = () => {
   useEffect(() => {
     fetch("https://api.escuelajs.co/api/v1/products")
        .then(response => response.json())
-       .then(data => setMensWearJson(data.slice(0, 10)))
+       .then(data => setMensWearJson(data.slice(85, 95)))
 }, [])
   return (
     <div className={c.mensWear}>
