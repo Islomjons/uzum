@@ -43,6 +43,7 @@
 .mensWear__item {
     max-width: 232px;
     width: 100%;
+    object-fit: cover;
     transition: 0.3s ease;
     border-radius: 8px;
 }

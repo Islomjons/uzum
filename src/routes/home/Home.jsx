@@ -2,6 +2,8 @@ import React from 'react'
 import Active from '../../components/active/Active'
 import CleanHome from '../../components/cleanHome/CleanHome'
 import Darhol from '../../components/darhol/Darhol'
+import ForChilds from '../../components/forChilds/ForChilds'
+import ForWomens from '../../components/forWomens/ForWomens'
 import HeaderMiddle from '../../components/headerMiddle/HeaderMiddle'
 import Hero from '../../components/hero/Hero'
 import HomeProductCards from '../../components/homeProductCards/HomeProductCards'
@@ -45,6 +47,8 @@ const Home = () => {
         <Phones />
         <MensWear />
         <WomensWear />
+        <ForChilds />
+        <ForWomens />
     </div>
   )
 }

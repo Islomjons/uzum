@@ -1,0 +1,19 @@
+.forchilds {
+    padding: 16px 0px;
+}
+
+.forchilds__container {
+
+}
+
+.forchilds__img {
+    width: 1240px;
+    height: 413px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+
+.forchilds__img:hover {
+    transform: scale(1.03);
+}

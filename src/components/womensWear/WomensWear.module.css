@@ -1,5 +1,5 @@
 .womensWear {
-    
+    position: relative;
 }
 
 .womensWear__wrapper {
@@ -92,9 +92,29 @@
 }
 
 .womensWear__swiper__btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    border-radius: 50%;
+    opacity: 0.5;
+    background-color: #fff;
+    cursor: pointer;
+}
 
+.womensWear__swiper__btn[data-btn-type="left"] {
+    left: 0;
+}
+
+.womensWear__swiper__btn[data-btn-type="right"] {
+    right: 0;
 }
 
 .womensWear__swiper__icon {
-    
+
 }
