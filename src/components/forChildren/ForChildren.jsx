@@ -3,7 +3,9 @@ import  c from "./ForChildren.module.css"
 
 const ForChildren = () => {
   return (
-    <div className={c.forChildren}>ForChildren</div>
+    <div className={c.forChildren}>
+      <h1>For Child</h1>
+    </div>
   )
 }
 
