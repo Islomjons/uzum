@@ -1,0 +1,60 @@
+.forChildren {
+
+}
+
+.forChildren__container {
+
+}
+
+.forChildren__wrapper {
+    display: flex;
+    align-items: center;
+    margin: 21px 0px;
+}
+
+.forChildren__heading {
+    font-size: 28px;
+    color: #000000;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.forChildren__next__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: none;
+    outline: none;
+    width: 36px;
+    height: 36px;
+}
+
+.forChildren__next__icon {
+    width: 24px;
+    height: 24px;
+}
+
+.forChildren__list {
+
+}
+
+.forChildren__item {
+
+}
+
+.forChildren__img {
+
+}
+
+.forChildren__item__wrapper {
+
+}
+
+.forChildren__title {
+
+}
+
+.forChildren__price {
+
+}
