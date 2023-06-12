@@ -1,11 +1,33 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import  c from "./ForChildren.module.css"
-import { GrFormNext } from "react-icons/gr"
+import { GrFormNext, GrFormPrevious } from "react-icons/gr"
+import { FiShoppingCart } from "react-icons/fi"
 
 const ForChildren = () => {
+  const elForChildren = useRef()
   const [forChildrenJson, setForChildrenJson] = useState([])
+  const [forChildrenSwiper, setForChildrenSwiper] = useState(0)
 
+  const forChildrenSwipeLeft = () => {
+      if (forChildrenSwiper > 0) {
+        setForChildrenSwiper(forChildrenJson => forChildrenJson - 1)
+      }else{
+        setForChildrenSwiper(forChildrenJson.length - 1)
+      }
+  }
+  
+  const forChildrenSwipeRight = () => {
+      if (forChildrenSwiper < forChildrenJson.length - 1) {
+          setForChildrenSwiper(forChildrenJson => forChildrenJson + 1)
+      }else{
+          setForChildrenSwiper(0)
+      }
+  }
+
+  useEffect(() => {
+      elForChildren.current.scrollLeft = forChildrenSwiper * elForChildren.current.offsetWidth
+  }, [forChildrenSwiper])
   useEffect(() => {
       fetch("https://api.escuelajs.co/api/v1/products")
           .then(response => response.json())
@@ -20,7 +42,10 @@ const ForChildren = () => {
                       <GrFormNext className={c.forChildren__next__icon}/>
                   </button>
             </div>
-            <ul className={c.forChildren__list}>
+            <button className={c.forChildren__swiper__btnss} data-btn-type="left" onClick={forChildrenSwipeLeft}>
+                <GrFormPrevious className={c.forChildren__swiper__icons}/>
+            </button>
+            <ul className={c.forChildren__list} ref={elForChildren}>
                 {
                     forChildrenJson.map((forChildrenApi, id) => 
                         <li className={c.forChildren__item} key={id}>
@@ -31,10 +56,18 @@ const ForChildren = () => {
                                     <p className={c.forChildren__price}>{forChildrenApi.price}</p>
                                 </div>
                             </Link>
+                            <div className={c.forChildren__cart__wrapper}>
+                                <button className={c.forChildren__cart__btn}>
+                                    <FiShoppingCart className={c.forChildren__cart__icon}/>
+                                </button>
+                            </div>
                         </li>
                     )
                 }
             </ul>
+            <button className={c.forChildren__swiper__btnss} data-btn-type="right" onClick={forChildrenSwipeRight}>
+                <GrFormNext className={c.forChildren__swiper__icons}/>
+            </button>
         </div>
     </div>
   )
