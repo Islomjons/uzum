@@ -10,6 +10,7 @@ import Hero from '../../components/hero/Hero'
 import HomeProductCards from '../../components/homeProductCards/HomeProductCards'
 import Keshbek from '../../components/keshbek/Keshbek'
 import MensWear from '../../components/mensWear/MensWear'
+import New from '../../components/new/New'
 import Ozuqa from '../../components/ozuqa/Ozuqa'
 import Phones from '../../components/phones/Phones'
 import ProductBottom from '../../components/productBottom/ProductBottom'
@@ -18,6 +19,7 @@ import ProductMain from '../../components/productMain/ProductMain'
 import Products from '../../components/products/Products'
 import Rent from '../../components/rent/Rent'
 import SeasonSpring from '../../components/seasonSpring/SeasonSpring'
+import SeeAgain from '../../components/seeagain/SeeAgain'
 import SeeAll from '../../components/seeAll/SeeAll'
 import SportsWear from '../../components/sportsWear/SportsWear'
 import Techno from '../../components/techno/Techno'
@@ -53,6 +55,8 @@ const Home = () => {
         <ForWomens />
         <Ozuqa />
         <ForChildren />
+        <SeeAgain />
+        <New />
     </div>
   )
 }

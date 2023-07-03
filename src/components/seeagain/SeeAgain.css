@@ -1,0 +1,24 @@
+.seeagain {
+    padding-bottom: 32px;
+}
+
+.seeagain__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.seeagain__btn {
+    max-width: 746px;
+    width: 100%;
+    padding: 7px 14px;
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #141415;
+    background-color: rgba(118,121,127,0.1);
+}
