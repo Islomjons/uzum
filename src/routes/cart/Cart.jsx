@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import c from "./Cart.module.css"
 import { CgMathPlus, CgMathMinus, CgHeart, CgTrash } from "react-icons/cg"
 
+
 const Cart = () => {
   const dispatch = useDispatch()
   const selector = useSelector(state => state)

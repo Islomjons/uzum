@@ -6,6 +6,7 @@ import SignUp from './components/signup/SignUp';
 import { Overlay } from './utils';
 import Routes from "./routes"
 import Catalog from './components/catalog/Catalog';
+import Footer from './components/footer/Footer';
 
 function App() {
   const [isSignUpActive, setIsSignUpActive] = useState(false)
@@ -19,6 +20,7 @@ function App() {
         <SignUp isSignUpActive={isSignUpActive} setIsSignUpActive={setIsSignUpActive} isSignUpEnter={isSignUpEnter} setIsSignUpEnter={setIsSignUpEnter}/>
         <Catalog isCatalogActive={isCatalogActive} setIsCatalogActive={setIsCatalogActive} isCatalogEnter={isCatalogEnter} setIsCatalogEnter={setIsCatalogEnter}/>
         <Routes />
+        <Footer />
         {
             isSignUpActive && <Overlay type="signup" state={isSignUpActive} callback={setIsSignUpActive}/> 
         }

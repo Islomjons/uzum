@@ -13,7 +13,7 @@ const Pdp = () => {
   const [activeImgOver, setActiveImgOver] = useState(0)
   const [singleProductData, setSingleProductData] = useState(null)
   useEffect(() => {
-      fetch(`https://api.escuelajs.co/api/v1/products/${id}`)
+      fetch(`   /${id}`)
           .then(response => response.json())
           .then(data => setSingleProductData(data))
   }, [])

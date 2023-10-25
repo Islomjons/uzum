@@ -1,5 +1,5 @@
 import { auth } from '../../firebase/config'
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { useHistory } from 'react-router-dom'
 import "./Signin.css"
 

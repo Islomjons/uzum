@@ -16,7 +16,7 @@ const cartReducer = ( state = initialCart, action) => {
                 return {
                     cart: [...state.cart]
                 }
-                case "INCREMENT":
+                case " ":
                     state.cart.map((product) => {
                         return product.id === action.data.id ? product.count + (product.count < 10 ? 1 : 0) : product.count
                     })

@@ -1,0 +1,133 @@
+.footer {
+    padding-top: 40px;
+}
+
+.footer__container {
+
+}
+
+/* .footer__container::before {
+    content: "";
+    display: inline-block;
+    border-bottom: 1px solid hsla(220,4%,48%,.2);
+    max-width: 1240px;
+    width: 100%;
+} */
+
+.footer__list {
+    display: flex;
+}
+
+.footer__item {
+    max-width: 310px;
+    width: 100%;
+}
+
+.footer__heading {
+    color: #1f1f26;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    margin-bottom: 16px;
+}
+
+.footer__item__link {
+    color: #4d4e59;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    text-decoration: none;
+}
+
+.footer__item__wrapper {
+    display: flex;
+    gap: 24px;
+}
+
+.footer__list__link {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.footer__list__icon {
+    width: 24px;
+    height: 24px;
+    color: #1f1f26;
+}
+
+.footer__list__text {
+    font-size: 12.8px;
+    line-height: 1.2em;
+    color: #1f1f26;
+}
+
+.footer__list__text1 {
+    color: #141415;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+}
+
+.footer__main__list {
+    margin-left: 75%;
+    padding-bottom: 40px;
+}
+
+.footer__main__item {
+
+}
+
+.footer__main__heading {
+    color: #141415;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    margin-bottom: 20px;
+}
+
+.footer__main__item__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer__main__item__icon {
+    width: 32px;
+    height: 32px;
+    color: #141415;
+}
+
+.footer__bottom__list {
+
+}
+
+.footer__bottom__list::before {
+    content: "";
+    display: inline-block;
+    border-bottom: 1px solid hsla(220,4%,48%,.2);
+    max-width: 1240px;
+    width: 100%;
+}
+
+.footer__bottom__lists {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 0px;
+}
+
+.footer__bottom__item1 {
+    color: #1f1f26;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+}
+
+.footer__bottom__item2 {
+    color: #4d4e59;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 14px;
+}
